@@ -1,0 +1,125 @@
+/* CSS FILE: sanitation.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f5f5f5;
+  line-height: 1.6;
+}
+h1 {
+  text-align: center;
+  background: #222;
+  color: #fff;
+  padding: 20px;
+}
+section {
+  width: 90%;
+  max-width: 900px;
+  margin: auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/*css for links to next page*/
+.link{
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.link a{
+  text-decoration-color: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(84, 88, 83);}
+
+
+img#filthy{
+  width: 500px;
+    height: 300px;
+    top: 50px;
+    left: 50px;
+    display: block;
+    border: 2px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+img:hover {
+  transform: scale(1.02);
+  margin: 15px 0;
+  border-radius: 8px;
+      }
+img {
+  width: 850px;
+    height: 400px;
+    top: 140px;
+    left: 100px;
+    display: block;
+    margin: 0 auto;
+    border: 2px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+img:hover {
+  transform: scale(1.02);
+  margin: 15px 0;
+  border-radius: 8px;
+}
+h2 {
+  margin-top: 30px;
+  color: #2a2a2a;
+}
+ul {
+  padding-left: 20px;
+}
+@media(max-width: 750px) {
+  section {
+    padding: 10px;
+  }
+  h1 {
+    font-size: 1.2rem;
+  }
+}
+/* 2. Responsive Images (The Most Crucial Fix) */
+/* This rule ensures all images scale down to fit the screen width */
+img {
+    max-width: 100%; /* Image will never be wider than its parent container */
+    height: auto; /* Maintains the image's aspect ratio */
+    display: 5px; /* Removes extra space below images */
+    margin: 20px auto; /* Centers the image and adds vertical space */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Don't make images wider than text in mobile view*/
+section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    
+    }
+@media (max-width: 767px) {
+    body {
+        padding: 20px; /* Less padding on mobile */
+  img.filthy{
+  width: 500px;
+    height: 50px;
+    top: 50px;
+    left: 50px;
+    display: block;
+    border: 2px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+img:hover {
+  transform: scale(1.02);
+  margin: 15px 0;
+  border-radius: 8px;
+      }
+
+    section {
+        padding: 20px; /* Less padding inside sections on mobile */
+    }
+}
+}
